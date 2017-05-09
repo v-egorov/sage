@@ -55,7 +55,13 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin']);
+}, ['helpers', 'setup', 'filters', 'admin', 'wp_bootstrap_navwalker']);
+
+// VE
+// added wp_bootstrap_navwalker -- see
+// https://discourse.roots.io/t/how-to-restore-the-bootstrap-nav-walkthrough/3657/38
+// https://discourse.roots.io/t/how-to-restore-the-bootstrap-nav-walkthrough/3657/41
+// https://discourse.roots.io/t/how-to-restore-the-bootstrap-nav-walkthrough/3657/48
 
 /**
  * Here's what's happening with these hooks:
