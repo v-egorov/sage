@@ -1,4 +1,6 @@
-// Colors
-$brand-primary:         darkblue;
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
 
-$fa-font-path:          '~font-awesome/fonts';
+$theme-colors: (
+  primary: #27ae60
+);
